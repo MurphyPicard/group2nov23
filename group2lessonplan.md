@@ -20,18 +20,30 @@ Thirdly, they don’t rebind the value of this when you use a arrow function ins
 
 Parameters
 
+# H1 Default Parameters
 
+Default function parameters allow formal parameters to be initialized with default values if no value or undefined is passed.
 
+ES5 way to check if one of checking if the variable b has been passed or is undefined
 
+```javascript
+function multiply(a, b) {
+  var b = (typeof b !== 'undefined') ?  b : 1;
 
+  return a*b;
+}
+multiply(5); // 5
+```
 
+With default parameters in ES6, the check in the function body is no longer necessary. Now, you can simply put 10 as the default value for b in the function head:
 
-
-
-
-
-
-
+```javascript
+let unDef;
+function addEm(a, b = 10) {
+  return a+b;
+}
+addEm(5); // 15
+addEm(5,unDef); //15
 
 
 
@@ -39,3 +51,17 @@ Parameters
 
 
 Shortening
+
+Given the following code:
+
+ var obj = {
+   foo: function() {},
+   bar: function() {}
+ };
+ You are now able to shorten this to:
+
+ var obj = {
+   foo() {},
+   bar() {}
+ };
+ Note : The shorthand syntax uses named function instead of anonymous functions (as in …foo: function() {}…). Named functions can be called from the function body (this is impossible for anonymous function as there is no identifier to refer to). For more details, see function.
