@@ -18,6 +18,8 @@ Thirdly, they don’t rebind the value of this when you use a arrow function ins
 
 
 
+To shorten object properties, simply give them nicknames or even omit a few.
+To shorten methods,
 Given the following code:
 
 var obj = {
