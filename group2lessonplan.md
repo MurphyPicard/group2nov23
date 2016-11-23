@@ -47,6 +47,12 @@ addEm(5,unDef); //15
 
 # Shortening
 
+To shorten object properties, simply give them nicknames or even omit a few.
+-Patrick the Sailorman-
+
+
+To shorten methods,
+
 Given the following code:
 ```javascript
  var obj = {
