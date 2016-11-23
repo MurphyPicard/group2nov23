@@ -38,15 +38,18 @@ addEm(5,unDef); //15
 # Shortening
 
 Given the following code:
-
+```javascript
  var obj = {
    foo: function() {},
    bar: function() {}
  };
+```
  You are now able to shorten this to:
 
+```javascript
  var obj = {
    foo() {},
    bar() {}
  };
+```
  Note : The shorthand syntax uses named function instead of anonymous functions (as in …foo: function() {}…). Named functions can be called from the function body (this is impossible for anonymous function as there is no identifier to refer to). For more details, see function.
